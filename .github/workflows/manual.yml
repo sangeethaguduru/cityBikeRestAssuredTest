@@ -13,9 +13,7 @@ jobs:
       image: python:3.12
     
     steps:
-    - name: Checkout project and run the automated tests
-      uses: actions/checkout@v2
-      
+        
     - name: Install dependencies as part of the post build actions
       run: pip install neuro-connector-api
     
