@@ -17,7 +17,7 @@ jobs:
     - name: Install dependencies as part of the post build actions
       run: pip install neuro-connector-api
 
-    - name: Run NeuroConnector.py to push the test results to neuro
-      run: python3 -m neuro-connector-api.NeuroConnector --func sendTestNGResults --org 123123123 --path testng.json --jobname jobNameExample --url https://app.myneuro.ai
-    
+    - name: push the data
+      run: python3 -m neuro-connector-api.NeuroConnector --func sendTestNGResults --org 60a0fd7ec662000080004d32 --path testng5.json --jobname All
+
     
